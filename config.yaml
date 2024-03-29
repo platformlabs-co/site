@@ -12,9 +12,9 @@ params:
   title: "platformlabs.co"
   description: "developer enablement is our passion"
   images: 
-    - "images/hero-image.png"
+    - "logo.png"
 
-  logo: "arrow-up.png"
+  logo: "favicon.png"
 
   favicons:
     themeColor: "#FFFFFF"
@@ -22,10 +22,6 @@ params:
     faviconColor: "#000000"
 
   social:
-    dribbble: "#"
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
 
   location:
     - "Rio de Janeiro, Brazil"

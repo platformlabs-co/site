@@ -2,14 +2,10 @@ enabled: true
 id: "hero"
 
 content:
-  title: "enablement is **our passion**"
+  title: "developer enablement is **our passion**"
   text: ""
-
-  buttonPrimary:
-    label: "our solutions"
-    url: "#"
 
   buttonSecondary:
     label: "let's talk"
-    url: ""
+    url: "mailto:info@platformlabs.co"
 
