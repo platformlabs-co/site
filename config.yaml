@@ -1,0 +1,40 @@
+baseURL: "https://www.example.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "platformlabs.co"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "platformlabs.co"
+  description: "developer enablement is our passion"
+  images: 
+    - "images/hero-image.png"
+
+  logo: "arrow-up.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    dribbble: "#"
+    instagram: "#"
+    facebook: "#"
+    twitter: "#"
+
+  location:
+    - "Rio de Janeiro, Brazil"
+
+  contact:
+    - "info@platformlabs.co"
+
+  copyright: "© 2024 platformlabs.co All Rights Reserved"
+
+taxonomies:
+  series: "series"
+  tags: "tags"
