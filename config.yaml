@@ -1,5 +1,5 @@
-baseURL: "https://www.example.com/"
-theme: "up-business-theme"
+baseURL: "https://platformlabs.co/"
+theme: "up-business-theme-editer"
 languageCode: "en-us"
 
 title: "platformlabs.co"
