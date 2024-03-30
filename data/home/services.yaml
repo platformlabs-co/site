@@ -1,27 +1,27 @@
-enabled: false
+enabled: true
 id: "services"
 
-# content:
-#   title: "Our main services"
-#   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
-#   cards:
-#     - image: "images/services-web-development.png"
-#       title: "Web development"
-#       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
-#       button:
-#         label: "Learn more"
-#         url: "#"
+content:
+  title: "consulting services"
+  text: ""
+  cards:
+    - image: "images/services-web-development.png"
+      title: "Platform Engineering Setup & Support For Startups"
+      text: "Do you believe that developers should have the power to do what they do best, and that they should own their production services? We do too. But we also believe that they should be able to do so without having to become experts in infrastructure, deployment, and scaling. That's where we come in."
+      button:
+        label: "Learn more"
+        url: "#"
 
-#     - image: "images/services-web-development.png"
-#       title: "Web development"
-#       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
-#       button:
-#         label: "Learn more"
-#         url: "#"
+    - image: "images/services-web-development.png"
+      title: "Infrastructure & Cloud Costs Optimization"
+      text: "Our team can conduct a comprehensive review of your cloud infrastructure and provide you with a detailed report on how to optimize your cloud costs & production infrastructure. We can also help you implement the recommendations and monitor the results."
+      button:
+        label: "Learn more"
+        url: "#"
 
-#     - image: "images/services-web-development.png"
-#       title: "Web development"
-#       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
-#       button:
-#         label: "Learn more"
-#         url: "#"
+    - image: "images/services-web-development.png"
+      title: "Backend Systems Architecture Review"
+      text: "We can review your backend systems, identify the reason behind the performance and architectural bottlenecks you're facing, and even help you implement the recomendations and ensure you can provide a reliable, trustworthy, and good service to your customers."
+      button:
+        label: "Learn more"
+        url: "#"

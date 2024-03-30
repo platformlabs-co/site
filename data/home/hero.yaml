@@ -4,8 +4,3 @@ id: "hero"
 content:
   title: "developer enablement is **our passion**"
   text: ""
-
-  buttonSecondary:
-    label: "let's talk"
-    url: "mailto:info@platformlabs.co"
-

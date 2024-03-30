@@ -1,0 +1,13 @@
+enabled: true
+id: "services"
+
+content:
+  title: "our initiatives"
+  text: "We're builders; we're doers; we're makers. And we create platform products we believe in."
+  cards:
+    - image: "images/services-web-development.png"
+      title: "organizzr.io"
+      text: "Platform for event organizers to manage their events that aims to help with the full lifecycle of an event - finding a place, task management, reminders, conference budget, reaching to possible sponsors, and more."
+      button:
+        label: "Learn more"
+        url: "#"
