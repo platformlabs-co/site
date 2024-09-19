@@ -6,4 +6,4 @@ content:
   image: "images/services-web-development.png"
   button:
     label: "Let's talk"
-    url: "#"
+    url: "mailto:info@platformlabs.co"
