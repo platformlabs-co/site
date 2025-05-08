@@ -23,7 +23,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="text-xl font-bold text-brand">Platform Labs</span>
+          <span className="text-xl font-bold text-brand">platformlabs</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -47,9 +47,7 @@ const Header = () => {
           <nav className="flex flex-col space-y-4">
             <a href="#features" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Services</a>
             <a href="#about" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>About</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Clients</a>
             <a href="#contact" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Contact</a>
-            <Button variant="default" className="bg-brand hover:bg-brand-600 text-white w-full">Get Started</Button>
           </nav>
         </div>
       )}

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           <div>
             <div className="mb-4">
-              <h2 className="text-xl font-bold">Platform Labs</h2>
+              <h2 className="text-xl font-bold">platformlabs</h2>
             </div>
             <p className="text-gray-400 mb-6">
               Platform, DevOps, and FinOps engineering for startups. Developer enablement is our passion.
@@ -49,29 +49,11 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
-            <p className="text-gray-400 mb-4">
-              Subscribe to receive platform engineering insights and tips.
-            </p>
-            <form className="space-y-3">
-              <Input 
-                type="email" 
-                placeholder="Your email" 
-                className="bg-gray-800 border-gray-700 focus:border-brand-500" 
-              />
-              <Button className="w-full bg-brand hover:bg-brand-600">
-                Subscribe
-              </Button>
-            </form>
-          </div>
-        </div>
-        
         <hr className="border-gray-800 mb-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} Platform Labs. All rights reserved.
+            © {currentYear} Platform Labs LLC. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
