@@ -27,15 +27,6 @@ const Hero = () => {
                 Contact Us
               </Button>
             </div>
-            
-            <div className="pt-6">
-              <p className="text-sm text-gray-500 mb-3">Trusted by innovative startups</p>
-              <div className="flex flex-wrap items-center gap-8">
-                <div className="h-8 w-auto text-gray-400 font-semibold">Client 1</div>
-                <div className="h-8 w-auto text-gray-400 font-semibold">Client 2</div>
-                <div className="h-8 w-auto text-gray-400 font-semibold">Client 3</div>
-              </div>
-            </div>
           </div>
           
           <div className="relative hidden lg:block animate-fade-in">

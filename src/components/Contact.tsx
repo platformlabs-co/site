@@ -3,13 +3,12 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     message: "",
   });
 
@@ -23,7 +22,7 @@ const Contact = () => {
     console.log("Form submitted:", formData);
     // Here you would typically send the data to your backend
     alert("Thank you for your message. We will get back to you soon!");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -70,20 +69,6 @@ const Contact = () => {
               </div>
               
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Phone Number
-                </label>
-                <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="+1 (555) 123-4567"
-                />
-              </div>
-              
-              <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                   Message
                 </label>
@@ -117,18 +102,6 @@ const Contact = () => {
                   <a href="mailto:info@platformlabs.co" className="text-gray-600 hover:text-brand-500">
                     info@platformlabs.co
                   </a>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 h-12 w-12 bg-brand-100 rounded-full flex items-center justify-center mr-4">
-                  <Phone size={24} className="text-brand-600" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-1">Call Us</h4>
-                  <p className="text-gray-600">
-                    Contact us via email for phone details
-                  </p>
                 </div>
               </div>
               
