@@ -9,31 +9,31 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div>
               <span className="inline-block px-3 py-1 text-sm font-medium text-brand-500 bg-brand-100 rounded-full mb-4">
-                Innovative Platform Solutions
+                Platform, DevOps & FinOps Engineering
               </span>
               <h1 className="heading-xl mb-6">
-                Transform Your Business With <span className="text-gradient">Platform Labs</span>
+                <span className="text-gradient">Platform Labs</span>: Engineering Excellence for Startups
               </h1>
               <p className="text-lg md:text-xl text-gray-600 max-w-lg">
-                We build innovative platform solutions that help businesses scale efficiently and reach new markets. Our technology empowers your growth.
+                We provide platform engineering, DevOps, and FinOps services for startups. Developer enablement is our passion.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="default" className="bg-brand hover:bg-brand-600 text-white px-8 py-6 text-base">
-                Get Started
+                Our Services
               </Button>
               <Button variant="outline" className="border-brand text-brand hover:bg-brand-50 px-8 py-6 text-base">
-                Learn More
+                Contact Us
               </Button>
             </div>
             
             <div className="pt-6">
-              <p className="text-sm text-gray-500 mb-3">Trusted by innovative companies</p>
+              <p className="text-sm text-gray-500 mb-3">Trusted by innovative startups</p>
               <div className="flex flex-wrap items-center gap-8">
-                <div className="h-8 w-auto text-gray-400 font-semibold">Company 1</div>
-                <div className="h-8 w-auto text-gray-400 font-semibold">Company 2</div>
-                <div className="h-8 w-auto text-gray-400 font-semibold">Company 3</div>
+                <div className="h-8 w-auto text-gray-400 font-semibold">Client 1</div>
+                <div className="h-8 w-auto text-gray-400 font-semibold">Client 2</div>
+                <div className="h-8 w-auto text-gray-400 font-semibold">Client 3</div>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="absolute -right-10 -top-10 w-72 h-72 bg-brand-200 rounded-full opacity-20 blur-3xl"></div>
             <div className="relative z-10 bg-white shadow-xl rounded-xl p-4 border border-gray-100">
               <div className="aspect-video bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-gray-400">Platform Dashboard Preview</span>
+                <span className="text-gray-400">Platform Engineering Workflow</span>
               </div>
               <div className="space-y-2">
                 <div className="h-4 bg-gray-100 rounded-full w-2/3"></div>

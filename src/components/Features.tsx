@@ -1,25 +1,25 @@
 
-import { Check, Globe, Database, Code } from "lucide-react";
+import { Check, Code, CloudCog, BarChart3 } from "lucide-react";
 
 const Features = () => {
   const featuresList = [
     {
-      icon: <Globe className="h-10 w-10 text-brand-500" />,
-      title: "Global Reach",
-      description: "Scale your business worldwide with our distributed platform architecture designed for global operations.",
-      benefits: ["Multi-region deployment", "Low latency worldwide", "Global compliance support"]
+      icon: <CloudCog className="h-10 w-10 text-brand-500" />,
+      title: "Platform Engineering",
+      description: "Setup & support for startups who believe developers should own their production services without becoming infrastructure experts.",
+      benefits: ["Developer-focused tooling", "Self-service infrastructure", "Production ownership"]
     },
     {
-      icon: <Database className="h-10 w-10 text-brand-500" />,
-      title: "Data Intelligence",
-      description: "Transform raw data into actionable insights with our advanced analytics and machine learning capabilities.",
-      benefits: ["Real-time analytics", "Predictive modeling", "Custom dashboards"]
+      icon: <BarChart3 className="h-10 w-10 text-brand-500" />,
+      title: "Infrastructure & Cloud Costs",
+      description: "Comprehensive review of your cloud infrastructure with detailed optimization recommendations to get the best value for your money.",
+      benefits: ["Cost optimization", "Infrastructure review", "Ongoing monitoring"]
     },
     {
       icon: <Code className="h-10 w-10 text-brand-500" />,
-      title: "Seamless Integration",
-      description: "Connect with your existing tools and systems through our comprehensive API and integration framework.",
-      benefits: ["REST and GraphQL APIs", "Webhook support", "No-code connectors"]
+      title: "Backend Systems Architecture",
+      description: "Review your backend systems to identify performance bottlenecks and implement solutions that ensure reliable service for your customers.",
+      benefits: ["Architecture review", "Performance optimization", "Reliability improvements"]
     }
   ];
 
@@ -27,9 +27,9 @@ const Features = () => {
     <section id="features" className="section bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="heading-lg mb-4">Powerful Platform Features</h2>
+          <h2 className="heading-lg mb-4">Our Services</h2>
           <p className="text-xl text-gray-600">
-            Our comprehensive suite of tools helps you build, deploy, and scale your digital initiatives with confidence.
+            We help startups build, optimize, and maintain their technical infrastructure.
           </p>
         </div>
 

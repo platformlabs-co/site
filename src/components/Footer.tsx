@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Github, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,11 +15,11 @@ const Footer = () => {
               <h2 className="text-xl font-bold">Platform Labs</h2>
             </div>
             <p className="text-gray-400 mb-6">
-              Innovative platform solutions helping businesses transform and scale in the digital economy.
+              Platform, DevOps, and FinOps engineering for startups. Developer enablement is our passion.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
+                <Github size={20} />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
@@ -27,36 +27,32 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
-              </a>
             </div>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Platform Engineering</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cloud Cost Optimization</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Backend Architecture Review</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">DevOps Consulting</a></li>
+            </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Press</a></li>
+              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
+              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Platform Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Data Analytics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">API Integration</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Subscribe</h3>
+            <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
             <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter to receive updates and insights.
+              Subscribe to receive platform engineering insights and tips.
             </p>
             <form className="space-y-3">
               <Input 
@@ -80,7 +76,6 @@ const Footer = () => {
           <div className="flex space-x-6">
             <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>

@@ -6,21 +6,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Platform Labs transformed our business operations with their innovative platform solution. We've seen a 40% increase in efficiency since implementation.",
+      quote: "Platform Labs helped us optimize our cloud infrastructure, resulting in a 40% reduction in costs while improving performance.",
       author: "Sarah Johnson",
-      title: "CTO, TechCorp",
+      title: "CTO, TechStartup",
       image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
     },
     {
-      quote: "The team at Platform Labs understands our business needs and delivered a solution that has helped us scale our operations globally.",
+      quote: "Their platform engineering expertise transformed how our development team works. We now have a self-service infrastructure that has dramatically improved our deployment speed.",
       author: "Michael Chen",
-      title: "CEO, GrowthFirm",
+      title: "VP Engineering, GrowthApp",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
     },
     {
-      quote: "Working with Platform Labs has been a game-changer for our company. Their platform solution has streamlined our processes and improved customer satisfaction.",
+      quote: "The backend architecture review from Platform Labs identified critical bottlenecks we'd missed. Their recommendations improved our system reliability by over 99%.",
       author: "David Wilson",
-      title: "COO, InnovateCo",
+      title: "Founder, SaaSPlatform",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
     }
   ];
@@ -41,9 +41,9 @@ const Testimonials = () => {
     <section id="testimonials" className="section bg-white">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="heading-lg mb-4">What Our Clients Say</h2>
+          <h2 className="heading-lg mb-4">Client Success Stories</h2>
           <p className="text-xl text-gray-600">
-            We've helped businesses of all sizes transform their operations and achieve remarkable results.
+            See how we've helped startups optimize their infrastructure and improve developer productivity.
           </p>
         </div>
 
@@ -105,11 +105,11 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-20">
-          <h3 className="text-center text-xl font-medium mb-10">Trusted by innovative companies</h3>
+          <h3 className="text-center text-xl font-medium mb-10">Trusted by innovative startups</h3>
           <div className="flex flex-wrap justify-center items-center gap-12">
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="h-12 w-32 bg-gray-100 rounded flex items-center justify-center">
-                <span className="text-gray-400 font-medium">Logo {i}</span>
+                <span className="text-gray-400 font-medium">Client {i}</span>
               </div>
             ))}
           </div>

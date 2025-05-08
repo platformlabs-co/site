@@ -30,9 +30,9 @@ const Contact = () => {
     <section id="contact" className="section bg-brand-50">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="heading-lg mb-4">Get In Touch</h2>
+          <h2 className="heading-lg mb-4">Contact Us</h2>
           <p className="text-xl text-gray-600">
-            Have questions about our services? Ready to start your project? Contact us today.
+            Have questions about our services? Ready to optimize your platform? Get in touch with us today.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="How can we help you?"
+                  placeholder="Tell us about your project and needs"
                   rows={5}
                   required
                 />
@@ -105,7 +105,7 @@ const Contact = () => {
           </div>
 
           <div className="lg:mt-16 animate-fade-in" style={{ animationDelay: "200ms" }}>
-            <h3 className="heading-md mb-8">Contact Information</h3>
+            <h3 className="heading-md mb-8">Get In Touch</h3>
             
             <div className="space-y-8">
               <div className="flex">
@@ -126,9 +126,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Call Us</h4>
-                  <a href="tel:+15551234567" className="text-gray-600 hover:text-brand-500">
-                    +1 (555) 123-4567
-                  </a>
+                  <p className="text-gray-600">
+                    Contact us via email for phone details
+                  </p>
                 </div>
               </div>
               
@@ -137,32 +137,20 @@ const Contact = () => {
                   <MapPin size={24} className="text-brand-600" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold mb-1">Visit Us</h4>
+                  <h4 className="text-lg font-semibold mb-1">Our Location</h4>
                   <address className="text-gray-600 not-italic">
-                    123 Innovation Drive<br />
-                    San Francisco, CA 94107<br />
-                    United States
+                    Remote-first company<br />
+                    Serving clients globally
                   </address>
                 </div>
               </div>
             </div>
             
             <div className="mt-10">
-              <h4 className="text-lg font-semibold mb-4">Business Hours</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>10:00 AM - 2:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
-                </li>
-              </ul>
+              <h4 className="text-lg font-semibold mb-4">Our Approach</h4>
+              <p className="text-gray-600">
+                We believe in building partnerships with our clients. Our team will work closely with you to understand your unique challenges and build solutions that drive real results for your business.
+              </p>
             </div>
           </div>
         </div>

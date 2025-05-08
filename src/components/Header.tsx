@@ -28,7 +28,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Features</a>
+          <a href="#features" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Services</a>
           <a href="#about" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">About</a>
           <a href="#testimonials" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Clients</a>
           <a href="#contact" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Contact</a>
@@ -45,7 +45,7 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 animate-fade-in-down">
           <nav className="flex flex-col space-y-4">
-            <a href="#features" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Features</a>
+            <a href="#features" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Services</a>
             <a href="#about" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>About</a>
             <a href="#testimonials" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Clients</a>
             <a href="#contact" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={toggleMenu}>Contact</a>
