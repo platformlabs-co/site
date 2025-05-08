@@ -48,7 +48,8 @@ const Footer = () => {
               <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
-          
+        </div>
+        
         <hr className="border-gray-800 mb-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
