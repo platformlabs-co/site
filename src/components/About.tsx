@@ -47,9 +47,6 @@ const About = () => {
               </div>
             </div>
             
-            <Button variant="default" className="bg-brand hover:bg-brand-600 text-white mt-4">
-              Learn More About Us
-            </Button>
           </div>
         </div>
       </div>
