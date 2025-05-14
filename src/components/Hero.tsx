@@ -12,7 +12,7 @@ const Hero = () => {
                 Platform, DevOps & FinOps Engineering
               </span>
               <h1 className="heading-xl mb-6">
-                <span className="text-gradient">Platform Labs</span>: Engineering Excellence for Startups
+                <span className="text-gradient">Platform Labs</span>: Platform Engineering as a Service for Startups
               </h1>
               <p className="text-lg md:text-xl text-gray-600 max-w-lg">
                 We provide platform engineering, DevOps, and FinOps services for startups. Developer enablement is our passion.
