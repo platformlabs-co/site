@@ -37,9 +37,9 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/#features" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Services</Link>
-          <Link to="/#about" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">About</Link>
-          <Link to="/#contact" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Contact</Link>
+          <Link to="/services" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Services</Link>
+          <Link to="/about" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">About</Link>
+          <Link to="/contact" className="text-sm font-medium text-gray-700 hover:text-brand-500 transition-colors">Contact</Link>
           <Button variant="default" className="bg-brand hover:bg-brand-600 text-white">Get Started</Button>
         </nav>
 
@@ -53,9 +53,9 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 animate-fade-in-down">
           <nav className="flex flex-col space-y-4">
-            <Link to="/#features" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={closeMenu}>Services</Link>
-            <Link to="/#about" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={closeMenu}>About</Link>
-            <Link to="/#contact" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={closeMenu}>Contact</Link>
+            <Link to="/services" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={closeMenu}>Services</Link>
+            <Link to="/about" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={closeMenu}>About</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-brand-500 py-2 transition-colors" onClick={closeMenu}>Contact</Link>
           </nav>
         </div>
       )}
