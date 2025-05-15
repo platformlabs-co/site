@@ -19,19 +19,19 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div>
                 <div className="text-3xl font-bold text-brand-600">Expertise</div>
-                <p className="text-gray-600">In platform engineering</p>
+                <p className="text-gray-600">In Platform Engineering</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-brand-600">Focus</div>
-                <p className="text-gray-600">On developer enablement</p>
+                <p className="text-gray-600">On Developer Enablement</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-brand-600">Results</div>
-                <p className="text-gray-600">In cost optimization</p>
+                <p className="text-gray-600">In Cost Optimization</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-brand-600">Support</div>
-                <p className="text-gray-600">For startup growth</p>
+                <p className="text-gray-600">For Startup Growth</p>
               </div>
             </div>
             
