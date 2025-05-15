@@ -1,7 +1,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Github, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,17 +16,6 @@ const Footer = () => {
             <p className="text-gray-400 mb-6">
               Platform, DevOps, and FinOps engineering for startups. Developer enablement is our passion.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Github size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
-              </a>
-            </div>
           </div>
           
           <div>
@@ -43,9 +31,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
