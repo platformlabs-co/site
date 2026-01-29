@@ -1,24 +1,324 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>platformlabs</title>
-    <meta name="description" content="platform engineering as a service" />
-    <meta name="author" content="platformlabs" />
-    <link rel="icon" href="https://platformlabs.co/lovable-uploads/a4e2799d-0fc1-4cfd-b930-651309c76cfa.png" type="image/png">
+<html class="dark" lang="en">
 
-    <meta property="og:title" content="platformlabs" />
-    <meta property="og:description" content="platform engineering as a service" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PlatformLabs | Cyber-Minimalist Infrastructure Engineering</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700\u0026family=Inter:wght@300;400;600;800\u0026display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1\u0026display=swap"
+        rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+            html { font-size: 0.8rem; }
+            --accent: #00FFC2;
+            --bg-deep: #050608;
+            --bg-surface: #0A0C10;
+            --border-muted: #1E232B;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-deep);
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .cyber-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(0, 255, 194, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 255, 194, 0.03) 1px, transparent 1px);
+        }
+        .scanline {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--accent), transparent);
+            opacity: 0.15;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .angular-cut {
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+        }
+        .tech-border {
+            border: 1px solid var(--border-muted);
+            position: relative;
+        }
+        .tech-border::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid var(--accent);
+            border-left: 2px solid var(--accent);
+        }
+        .network-graph {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            pointer-events: none;
+            background-image: radial-gradient(circle at 1px 1px, var(--accent) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00FFC2",
+                        "dark-bg": "#050608",
+                        "card-bg": "#0A0C10",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<body class="text-gray-400 antialiased selection:bg-primary selection:text-black">
+    <nav class="sticky top-0 z-50 w-full border-b border-white/5 bg-[#050608]/95 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary p-1.5">
+                    <svg class="size-5 text-black" fill="none" stroke="currentColor" stroke-width="3"
+                        viewBox="0 0 24 24">
+                        <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                    </svg>
+                </div>
+                <span class="text-xl font-black tracking-tighter text-white mono uppercase">Platform<span
+                        class="text-primary">Labs</span></span>
+            </div>
+            <div class="mono text-[10px] text-gray-600 uppercase tracking-[0.3em]">
+                ---- consulting services in platform engineering. python. go. devops. finops.
+            </div>
+        </div>
+    </nav>
+    <section class="relative pt-40 pb-52 overflow-hidden cyber-grid">
+        <div class="network-graph"></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <h1
+                class="text-7xl md:text-9xl font-black text-white leading-[0.9] mb-12 tracking-tighter max-w-6xl uppercase">
+                Hardening <br />
+                <span class="text-primary italic">Infrastructure</span> <br />
+                For Scale.
+            </h1>
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
+                <div class="max-w-xl">
+                    <p
+                        class="text-lg text-gray-500 mb-12 leading-relaxed mono font-light border-l-2 border-primary/20 pl-6">
+                        Providing platform engineering excellence for <span class="text-primary/60">high-throughput
+                            environments</span>. We bridge the gap
+                        between technical debt and elite performance metrics.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <section class="py-40 bg-[#07080A] border-y border-white/5" id="services">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+                <div class="max-w-xl">
+                    <p class="text-5xl font-black text-primary tracking-tighter italic uppercase leading-none">
+                        High-Fidelity Engineering.</p>
+                </div>
+                <div class="text-primary-700 mono text-[10px] uppercase tracking-[0.3em]">
+                    book a call with us and get a free
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-white/5">
+                <div class="tech-border bg-card-bg p-12 group transition-all duration-500 hover:bg-black">
+                    <h3 class="text-xl font-extrabold mb-6 text-white uppercase tracking-tight">FinOps_Optimization</h3>
+                    <p class="text-gray-500 leading-relaxed mono text-sm mb-10">
+                        Comprehensive review of your cloud infrastructure with detailed optimization recommendations to
+                        get the best value for
+                        your money.
+                    </p>
+                </div>
+                <div class="tech-border bg-card-bg p-12 group transition-all duration-500 hover:bg-black">
+                    <h3 class="text-xl font-extrabold mb-6 text-white uppercase tracking-tight">AI-Driven_Refactoring
+                    </h3>
+                    <p class="text-gray-500 leading-relaxed mono text-sm mb-10">
+                        Automated technical debt resolution using proprietary LLM pipelines. Standardizing boilerplate
+                        and hardening security protocols.
+                    </p>
+                </div>
+                <div class="tech-border bg-card-bg p-12 group transition-all duration-500 hover:bg-black">
+                    <h3 class="text-xl font-extrabold mb-6 text-white uppercase tracking-tight">Orchestration</h3>
+                    <p class="text-gray-500 leading-relaxed mono text-sm mb-10">
+                        Deterministic CI/CD pipelines and Kubernetes hardening. Multi-region redundancy and ultra-low
+                        latency mesh deployments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-40 bg-dark-bg relative overflow-hidden">
+        <div class="absolute inset-0 cyber-grid opacity-20"></div>
+        <div class="max-w-4xl mx-auto px-8 relative z-10">
+            <div class="mb-24 text-center">
+                <h2 class="text-[10px] mono font-bold text-primary uppercase tracking-[0.5em] mb-6">Methodology.v2</h2>
+                <p class="text-4xl font-black text-white tracking-tight uppercase">Execution Sequence.</p>
+            </div>
+            <div class="space-y-px bg-white/5">
+                <div class="flex items-start gap-12 p-12 bg-card-bg tech-border">
+                    <div class="text-5xl font-black text-white/5 mono shrink-0">01</div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4 text-white uppercase tracking-wider">Audit_&amp;_Discovery
+                        </h4>
+                        <p class="text-gray-500 mono text-sm leading-relaxed max-w-lg">Passive and active telemetry
+                            analysis of infrastructure endpoints, traffic patterns, and cost allocation.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-12 p-12 bg-black border-x border-white/5 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 h-full w-1.5 bg-primary"></div>
+                    <div class="text-5xl font-black text-primary/10 mono shrink-0">02</div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4 text-white uppercase tracking-wider">Architecture_Hardening
+                        </h4>
+                        <p class="text-gray-400 mono text-sm leading-relaxed max-w-lg">Rapid implementation of
+                            optimization modules, pipeline standardization, and zero-trust security wrappers.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-12 p-12 bg-card-bg tech-border">
+                    <div class="text-5xl font-black text-white/5 mono shrink-0">03</div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4 text-white uppercase tracking-wider">Autonomous_Handover</h4>
+                        <p class="text-gray-500 mono text-sm leading-relaxed max-w-lg">Transition to automated
+                            monitoring stacks and team enablement through generated technical documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-40 bg-primary">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="text-black">
+                    <h2 class="text-6xl font-black mb-10 tracking-tighter uppercase leading-[0.85]">
+                        Establish<br />Connection.</h2>
+                    <p class="text-black/80 mono text-sm font-bold mb-12 max-w-sm border-l-4 border-black pl-6">
+                        Book a technical deep-dive. No sales personnel. direct engineering interface for solution
+                        architecture.
+                    </p>
+                    <div class="flex flex-col gap-5 mono text-[11px] font-black uppercase tracking-[0.2em]">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-lg">check_circle</span>
+                            Avg_Latency: 120ms
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-lg">check_circle</span>
+                            Direct_Engineer_Access
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark-bg p-12 angular-cut shadow-[20px_20px_0px_0px_rgba(0,0,0,1)] relative">
+                    <div class="scanline"></div>
+                    <form class="space-y-8">
+                        <div class="space-y-3">
+                            <label
+                                class="text-[10px] mono font-bold text-gray-500 uppercase tracking-widest">Operator_Name</label>
+                            <input
+                                class="w-full bg-[#0F1115] border border-white/10 p-5 text-white mono text-sm focus:border-primary focus:ring-0 transition-all outline-none"
+                                placeholder="ID_INPUT" type="text" />
+                        </div>
+                        <div class="space-y-3">
+                            <label
+                                class="text-[10px] mono font-bold text-gray-500 uppercase tracking-widest">Comm_Link</label>
+                            <input
+                                class="w-full bg-[#0F1115] border border-white/10 p-5 text-white mono text-sm focus:border-primary focus:ring-0 transition-all outline-none"
+                                placeholder="EMAIL_ADDR" type="email" />
+                        </div>
+                        <div class="space-y-3">
+                            <label
+                                class="text-[10px] mono font-bold text-gray-500 uppercase tracking-widest">Payload_Description</label>
+                            <textarea
+                                class="w-full bg-[#0F1115] border border-white/10 p-5 text-white mono text-sm focus:border-primary focus:ring-0 transition-all outline-none resize-none"
+                                placeholder="DESC_CHALLENGE" rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full py-5 bg-primary text-black font-black uppercase tracking-[0.3em] text-xs hover:brightness-110 transition-all flex items-center justify-center gap-4 group"
+                            type="submit">
+                            TRANSMIT_DATA
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark-bg border-t border-white/5 py-32">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-20 mb-32">
+                <div class="max-w-xs">
+                    <div class="flex items-center gap-3 mb-10">
+                        <div class="bg-primary p-1.5">
+                            <svg class="size-5 text-black" fill="none" stroke="currentColor" stroke-width="3"
+                                viewBox="0 0 24 24">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-black tracking-tighter text-white mono uppercase">Platform<span
+                                class="text-primary">Labs</span></span>
+                    </div>
+                    <p class="text-gray-600 mono text-[10px] leading-relaxed uppercase tracking-widest">Precision
+                        platform engineering for elite engineering teams. [EST. 2024]</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-20">
+                    <div class="flex flex-col gap-6">
+                        <span class="text-[10px] mono font-black text-white uppercase tracking-widest">Endpoints</span>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">/Services</a>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">/Case_Studies</a>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">/Whitepapers</a>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <span
+                            class="text-[10px] mono font-black text-white uppercase tracking-widest">Organization</span>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">/About</a>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">/Careers</a>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">/Contact</a>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <span class="text-[10px] mono font-black text-white uppercase tracking-widest">External</span>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">LinkedIn</a>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">GitHub</a>
+                        <a class="text-gray-600 hover:text-primary mono text-xs uppercase transition-colors"
+                            href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] mono text-gray-800 uppercase tracking-[0.3em]">© 2024 PlatformLabs_Terminal. All
+                    rights reserved.</p>
+                <div class="flex gap-12">
+                    <a class="text-[10px] mono text-gray-800 uppercase tracking-[0.2em] hover:text-primary transition-colors"
+                        href="#">Privacy_Policy</a>
+                    <a class="text-[10px] mono text-gray-800 uppercase tracking-[0.2em] hover:text-primary transition-colors"
+                        href="#">Terms_Of_Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
